@@ -59,19 +59,19 @@ export default class Welcome extends Component {
     return (
       <View style={styles.container}>
         <StatusBar barStyle="light-content" />
-        <Text style={styles.title}>Bem-vindo</Text>
+        <Text style={styles.title}>Welcome</Text>
         <Text style={styles.text}>
-          Para continuar precisamos que você informe seu usuário no Github.
+          To continue we need you to inform your user on Github.
         </Text>
 
-        {error && <Text style={styles.error}>Usuário não encontrado.</Text>}
+        {error && <Text style={styles.error}>User not found.</Text>}
 
         <View style={styles.form}>
           <TextInput
             style={styles.input}
             autoCapitalize="none"
             autoCorrect={false}
-            placeholder="Digite seu usuário"
+            placeholder="Enter your username"
             underlineColorAndroid="transparent"
             value={username}
             onChangeText={text => this.setState({ username: text })}
@@ -81,7 +81,7 @@ export default class Welcome extends Component {
             {loading ? (
               <ActivityIndicator size="small" color="#FFF" />
             ) : (
-              <Text style={styles.buttonText}>Prosseguir</Text>
+              <Text style={styles.buttonText}>Continue</Text>
             )}
           </TouchableOpacity>
         </View>

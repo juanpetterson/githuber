@@ -71,7 +71,7 @@ export default class Organizations extends Component {
 
     return (
       <View style={styles.container}>
-        <Header title="Organizações" />
+        <Header title="Organizations" />
         {loading ? (
           <ActivityIndicator style={styles.loading} />
         ) : (

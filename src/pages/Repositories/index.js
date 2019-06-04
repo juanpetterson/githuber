@@ -69,7 +69,7 @@ export default class Repositories extends Component {
 
     return (
       <View style={styles.container}>
-        <Header title="Repositórios" />
+        <Header title="Repositories" />
         {loading ? (
           <ActivityIndicator style={styles.loading} />
         ) : (
